@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="date">
+    <input type="button" onClick="showdate()" Value="showdate" /><br><br></div>
+    <div id="time">
+    <input type="button" onClick="showtime()" Value="showtime" />
+</div>
+   
+   <script>
+      function showdate()
+      {
+      let date = document.getElementById("date");
+      let newDate = new Date();
+      let year = newDate.getFullYear();
+      let month = newDate.getMonth();
+      let todaySDate = newDate.getDate();
+      date.innerHTML = " " + todaySDate + "/ " + month + "/ " + year;
+      }
+
+      function showtime()
+      {
+      let time = document.getElementById("time");  
+      let hours = newDate.getHours();
+      let minutes = newDate.getMinutes();
+      let seconds = newDate.getSeconds();
+      time.innerHTML = hours + ": " + minutes + ": " + seconds;
+      }
+   </script>
+</body>
+</html>
+</body>
+</html>
